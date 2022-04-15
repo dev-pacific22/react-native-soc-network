@@ -20,11 +20,11 @@ const CustomInput = props => {
   return (
     <React.Fragment>
       <Stack
-        space={3}
+        space={2}
         w={width ? width : '100%'}
         alignItems="center"
-        p=""
-        m="3">
+        p="2"
+        m="1">
         <Input
           w={{
             base: '100%',
