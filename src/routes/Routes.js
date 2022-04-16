@@ -1,9 +1,9 @@
-import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import SignInScreen from '../screens/SignInScreen';
-import SignUpScreen from '../screens/SignUpScreen';
-import DashboardScreen from '../screens/DashboardScreen';
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import SignInScreen from "../screens/SignInScreen";
+import SignUpScreen from "../screens/SignUpScreen";
+import DashboardScreen from "../screens/DashboardScreen";
 const Stack = createStackNavigator();
 
 const AppNavigator = () => {
@@ -12,7 +12,8 @@ const AppNavigator = () => {
       <Stack.Navigator
         name="Auth"
         initialRouteName="SignIn"
-        screenOptions={{ headerShown: false }}>
+        screenOptions={{ headerShown: false }}
+      >
         <Stack.Screen name="SignIn" component={SignInScreen} />
         <Stack.Screen name="SignUp" component={SignUpScreen} />
       </Stack.Navigator>
@@ -23,7 +24,8 @@ const AppNavigator = () => {
       <Stack.Navigator
         name="DashboardStack"
         initialRouteName="Dashboard"
-        headerMode="none">
+        headerMode="none"
+      >
         <Stack.Screen name="Dashboard" component={DashboardScreen} />
       </Stack.Navigator>
     );

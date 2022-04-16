@@ -1,11 +1,11 @@
-import axios from 'axios';
-import { API_TIME_OUT } from '../utils/Constant';
+import axios from "axios";
+import { API_TIME_OUT } from "../utils/Constant";
 
-const configHeader = async (token = '') => {
+const configHeader = async (token = "") => {
   // Can get the token from async storage.
   return (header = {
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
       access_token: token,
     },
     timeout: API_TIME_OUT,
@@ -18,7 +18,7 @@ export const getRequestApi = async (
   actionSuccess,
   actionFail,
   actionLoading,
-  isLoadingRequired = false,
+  isLoadingRequired = false
 ) => {
   if (isLoadingRequired) {
     dispatch({ type: actionLoading });
@@ -41,7 +41,7 @@ export const postRequestApi = async (
   actionSuccess,
   actionFail,
   actionLoading,
-  isLoadingRequired = false,
+  isLoadingRequired = false
 ) => {
   if (isLoadingRequired) {
     dispatch({ type: actionLoading });

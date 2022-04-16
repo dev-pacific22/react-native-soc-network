@@ -42,6 +42,7 @@ const Button = props => {
           lights && transparent ? defaultStyles.lightTransparentTextStyle : {},
           { ...labelStyle },
           disabled ? defaultStyles.disableTextStyle : {},
+          outline ? defaultStyles.outlineTextStyle : {},
         ]}>
         {buttonLabel}
       </Text>
@@ -81,6 +82,7 @@ const defaultStyles = StyleSheet.create({
     paddingLeft: 0,
     paddingRight: 0,
     color: Colors.white,
+    fontFamily: FONTS.FONT_SEMI_BOLD,
   },
   iconStyle: {
     marginLeft: 10,
@@ -88,7 +90,7 @@ const defaultStyles = StyleSheet.create({
     color: Colors.inversePrimaryText,
   },
   transparentStyle: {
-    // alignSelf: 'flex-start',
+    alignSelf: 'flex-start',
   },
   lightButtonStyle: {
     backgroundColor: Colors.primary,
@@ -105,9 +107,12 @@ const defaultStyles = StyleSheet.create({
   },
   outlineStyle: {
     borderWidth: 1,
-    borderColor: Colors.buttonTextDisable,
+    borderColor: Colors.primary,
     backgroundColor: Colors.transparent,
     elevation: 0,
+  },
+  outlineTextStyle: {
+    color: Colors.primary,
   },
   leftIconStyle: {
     height: 15,

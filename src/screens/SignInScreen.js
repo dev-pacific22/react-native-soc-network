@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import { translate } from "../locales";
-import { StyleSheet, Text, View, Image } from "react-native";
-import { CustomInput, Button } from "../components";
-import { assets } from "../assets";
-import { Colors } from "../utils";
+import React, { useState } from 'react';
+import { translate } from '../locales';
+import { StyleSheet, Text, View, Image } from 'react-native';
+import { CustomInput, Button } from '../components';
+import { assets } from '../assets';
+import { Colors } from '../utils';
 
 const SignInScreen = () => {
   const [userName, setUserName] = useState();
   const [password, setPassword] = useState();
-  const onUserNameChange = (text) => {
+  const onUserNameChange = text => {
     setUserName(text);
   };
-  const onPasswordChange = (text) => {
+  const onPasswordChange = text => {
     setPassword(text);
   };
 
@@ -26,31 +26,29 @@ const SignInScreen = () => {
             source={assets.app_logo}
             style={styles.logoStyle}
           />
-          <Text style={styles.logoTextStyle}>{translate("label_sign_in")}</Text>
+          <Text style={styles.logoTextStyle}>{translate('label_sign_in')}</Text>
         </View>
 
         <View style={styles.inputContainer}>
           <CustomInput
             name="username"
             onChangeText={onUserNameChange}
-            width={"75%"}
-            placeholder={translate("label_username")}
-            iconName={"user"}
+            width={'75%'}
+            placeholder={translate('label_username')}
+            iconName={'user'}
           />
           <CustomInput
             name="password"
             onChangeText={onPasswordChange}
-            width={"75%"}
-            placeholder={translate("label_password")}
+            width={'75%'}
+            placeholder={translate('label_password')}
             hasSecureTextEntry={true}
-            iconName={"lock"}
+            iconName={'lock'}
           />
           <Button
-            primary
-            block
-            iconRight
+            outline
             onPress={() => onNextClick()}
-            buttonLabel={translate("label_sign_in")}
+            buttonLabel={translate('label_sign_in')}
           />
         </View>
       </View>
@@ -64,15 +62,15 @@ export default SignInScreen;
 const styles = StyleSheet.create({
   containerStyle: {
     flex: 1,
-    width: "100%",
-    alignItems: "center",
-    justifyContent: "flex-start",
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
     backgroundColor: Colors.white,
   },
   logoContainer: {
-    alignItems: "center",
-    justifyContent: "center",
-    alignSelf: "center",
+    alignItems: 'center',
+    justifyContent: 'center',
+    alignSelf: 'center',
     marginHorizontal: 16,
   },
   logoStyle: {
@@ -82,18 +80,18 @@ const styles = StyleSheet.create({
   logoTextStyle: {
     color: Colors.primary,
     fontSize: 20,
-    fontWeight: "700",
+    fontWeight: '700',
   },
   inputContainer: {
-    flexDirection: "column",
-    maxWidth: "100%",
-    width: "100%",
-    justifyContent: "center",
-    alignItems: "center",
+    flexDirection: 'column',
+    maxWidth: '100%',
+    width: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
     marginVertical: 20,
   },
   separator: {
-    width: "100%",
+    width: '100%',
     height: 2,
     backgroundColor: Colors.secondaryTextColor,
   },

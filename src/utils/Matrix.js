@@ -1,9 +1,9 @@
 const FONTS = {
-  FONT_LIGHT: 'Abel-Regular',
-  FONT_REGULAR: 'Oswald-Regular',
-  FONT_MEDIUM: 'Oswald-Medium',
-  FONT_BOLD: 'Oswald-Bold',
-  FONT_SEMI_BOLD: 'Oswald-SemiBold',
+  FONT_LIGHT: "Abel-Regular",
+  FONT_REGULAR: "Oswald-Regular",
+  FONT_MEDIUM: "Oswald-Medium",
+  FONT_BOLD: "Oswald-Bold",
+  FONT_SEMI_BOLD: "Oswald-SemiBold",
 };
 
 const FONT_SIZE = {
