@@ -82,7 +82,7 @@ const defaultStyles = StyleSheet.create({
     paddingLeft: 0,
     paddingRight: 0,
     color: Colors.white,
-    fontFamily: FONTS.FONT_SEMI_BOLD,
+    fontFamily: FONTS.FONT_REGULAR,
   },
   iconStyle: {
     marginLeft: 10,

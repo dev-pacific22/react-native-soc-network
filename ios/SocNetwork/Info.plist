@@ -69,11 +69,12 @@
 		<string>Octicons.ttf</string>
 		<string>Zocial.ttf</string>
 		<string>Fontisto.ttf</string>
-		<string>Abel-Regular.ttf</string>
-		<string>Oswald-Bold.ttf</string>
-		<string>Oswald-Medium.ttf</string>
-		<string>Oswald-Regular.ttf</string>
-		<string>Oswald-SemiBold.ttf</string>
+		<string>roboto-bold.ttf</string>
+		<string>roboto-light.ttf</string>
+		<string>roboto-medium.ttf</string>
+		<string>roboto-regular.ttf</string>
+		<string>roboto-semi-bold.ttf</string>
+		<string>roboto-black.ttf</string>
 	</array>
 </dict>
 </plist>
