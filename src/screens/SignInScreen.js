@@ -3,7 +3,7 @@ import { translate } from '../locales';
 import { StyleSheet, Text, View, Image } from 'react-native';
 import { CustomInput, Button, LabelText } from '../components';
 import { assets } from '../assets';
-import { Colors } from '../utils';
+import { Colors, MATRIX } from '../utils';
 
 const SignInScreen = () => {
   const [userName, setUserName] = useState();
@@ -34,6 +34,7 @@ const SignInScreen = () => {
 
         <View style={styles.inputContainer}>
           <CustomInput
+            containerStyle={styles.inputContainerStyle}
             name="username"
             onChangeText={onUserNameChange}
             width={'75%'}
@@ -41,6 +42,7 @@ const SignInScreen = () => {
             iconName={'user'}
           />
           <CustomInput
+            containerStyle={styles.inputContainerStyle}
             name="password"
             onChangeText={onPasswordChange}
             width={'75%'}
@@ -49,9 +51,15 @@ const SignInScreen = () => {
             iconName={'lock'}
           />
           <Button
-            outline
+            style={styles.buttonStyle}
             onPress={() => onNextClick()}
             buttonLabel={translate('label_sign_in')}
+          />
+          <Button
+            outline
+            style={styles.buttonStyle}
+            onPress={() => onNextClick()}
+            buttonLabel={translate('label_sign_up')}
           />
         </View>
       </View>
@@ -96,5 +104,13 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 2,
     backgroundColor: Colors.secondaryTextColor,
+  },
+  buttonStyle: {
+    marginHorizontal: MATRIX.MARGIN,
+    marginVertical: 20,
+  },
+  inputContainerStyle: {
+    marginTop: 15,
+    marginBottom: 15,
   },
 });
