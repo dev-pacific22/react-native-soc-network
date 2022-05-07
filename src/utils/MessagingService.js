@@ -1,32 +1,32 @@
-import { Toast } from "native-base";
-import { Alert } from "react-native";
+import { Toast } from 'native-base';
+import { Alert } from 'react-native';
 export const toastService = {
   showToast: (
     message,
     duration = 2500,
-    buttonText = "Ok",
-    type = "default",
-    position = "bottom"
+    buttonText = 'Ok',
+    type = 'default',
+    position = 'bottom',
   ) => {
     Toast.show({
       text: message,
       duration,
       position, // top| bottom
-      textStyle: { textAlign: "center" },
+      textStyle: { textAlign: 'center' },
       buttonText,
-      type //  default | success | warning | danger
+      type, //  default | success | warning | danger
     });
-  }
+  },
 };
 
 export const showAlert = (
-  title = "Alert",
+  title = 'Alert',
   message,
-  positiveButtonLabel,
+  positiveButtonLabel = 'Okay',
   negativeButtonLabel,
   positiveCallback,
   negativeCallback,
-  isCancelable = false
+  isCancelable = false,
 ) => {
   Alert.alert(
     title,
@@ -34,14 +34,14 @@ export const showAlert = (
     [
       {
         text: positiveButtonLabel,
-        onPress: positiveCallback
+        onPress: positiveCallback,
       },
       {
         text: negativeButtonLabel,
         onPress: negativeCallback,
-        style: "cancel"
-      }
+        style: 'cancel',
+      },
     ],
-    { cancelable: isCancelable }
+    { cancelable: isCancelable },
   );
 };

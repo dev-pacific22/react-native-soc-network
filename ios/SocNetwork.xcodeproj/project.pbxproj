@@ -18,8 +18,8 @@
 		808DC7C869A24454B23E09EB /* roboto-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF28E6B23D2C45459CC1AA48 /* roboto-bold.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		AEA369D6A5BA8685E92FBA93 /* libPods-SocNetwork-SocNetworkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEE5EBD07E9B22CEA0C5DA3 /* libPods-SocNetwork-SocNetworkTests.a */; };
-		C5D3042BB27987F288638DE3 /* libPods-SocNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D50B78AA7D3144EC9A36F8C /* libPods-SocNetwork.a */; };
 		B21DC44F1DC54765AC2ED193 /* roboto-black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA022C23C0F84BAF80010834 /* roboto-black.ttf */; };
+		C5D3042BB27987F288638DE3 /* libPods-SocNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D50B78AA7D3144EC9A36F8C /* libPods-SocNetwork.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +60,7 @@
 		97F4679643314FA186D5E295 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		A2CE3CA44798405CADEC4C59 /* Oswald-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Oswald-Bold.ttf"; path = "../src/assets/fonts/Oswald-Bold.ttf"; sourceTree = "<group>"; };
 		A40245933ABB497A9E5D053B /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		AA022C23C0F84BAF80010834 /* roboto-black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "roboto-black.ttf"; path = "../src/assets/fonts/roboto-black.ttf"; sourceTree = "<group>"; };
 		AC13F7DE527940DD80341EEC /* Oswald-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Oswald-SemiBold.ttf"; path = "../src/assets/fonts/Oswald-SemiBold.ttf"; sourceTree = "<group>"; };
 		AF28E6B23D2C45459CC1AA48 /* roboto-bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "roboto-bold.ttf"; path = "../src/assets/fonts/roboto-bold.ttf"; sourceTree = "<group>"; };
 		B054EDA1C1404F139346B5A7 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
@@ -76,7 +77,6 @@
 		DE35A89680144FA0B88A9B5A /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		ECCCFB40705C42DCBE4717EA /* roboto-semi-bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "roboto-semi-bold.ttf"; path = "../src/assets/fonts/roboto-semi-bold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		AA022C23C0F84BAF80010834 /* roboto-black.ttf */ = {isa = PBXFileReference; name = "roboto-black.ttf"; path = "../src/assets/fonts/roboto-black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
