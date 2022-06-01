@@ -57,7 +57,7 @@ const SignInScreen = ({ navigation }) => {
     if (Object.keys(error).length > 0) {
       setErrors(error);
     } else {
-      navigation.navigate('Dashboard');
+      navigation.replace('DashboardStack');
     }
   };
 
@@ -66,7 +66,7 @@ const SignInScreen = ({ navigation }) => {
   };
 
   const onForgotPasswordClick = () => {
-    showAlert('Comming Soon', 'Yet to implement');
+    showAlert('Coming Soon', 'Yet to implement');
   };
 
   const togglePhoneAndEmail = () => {
